@@ -8,9 +8,18 @@ import { FooterComponent } from './Components/footer/footer.component';
 import { WelcomePageComponent } from './Components/welcome-page/welcome-page.component';
 import { RouterComponent } from './Components/router/router.component';
 import { NavbarComponent } from './Components/navbar/navbar.component';
+import { AboutMeComponent } from './Components/about-me/about-me.component';
+import { ProjectsComponent } from './Components/projects/projects.component';
+import { ProgressBarComponent } from './Components/progress-bar/progress-bar.component';
+import { DemoComponent } from './Components/demo/demo.component';
+import { TimeLineComponent } from './Components/time-line/time-line.component';
+import { LoaderComponent } from './loader/loader.component';
 
 const routes: Routes = [
   { path: '', component:RouterComponent  }, // Landing page route
+  { path: 'home', component: WelcomePageComponent },
+  { path: 'about', component: ProgressBarComponent },
+  { path: 'contact', component: DemoComponent },
 ];
 
 @NgModule({
@@ -19,7 +28,13 @@ const routes: Routes = [
     FooterComponent,
     WelcomePageComponent,
     RouterComponent,
-    NavbarComponent
+    NavbarComponent,
+    AboutMeComponent,
+    ProjectsComponent,
+    ProgressBarComponent,
+    DemoComponent,
+    TimeLineComponent,
+    LoaderComponent,
   ],
   imports: [
     RouterModule.forRoot(routes),
