@@ -16,7 +16,7 @@ import { TimeLineComponent } from './Components/time-line/time-line.component';
 import { LoaderComponent } from './loader/loader.component';
 
 const routes: Routes = [
-  { path: '', component:RouterComponent  }, // Landing page route
+  // { path: '', component:RouterComponent  }, // Landing page route
   { path: 'home', component: WelcomePageComponent },
   { path: 'about', component: ProgressBarComponent },
   { path: 'contact', component: DemoComponent },
