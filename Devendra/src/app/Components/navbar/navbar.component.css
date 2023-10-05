@@ -4,6 +4,11 @@
 .navbar {
     background-color: transparent;
     transition: background-color 0.5s ease-in-out;
+    background-image: url(../../../assets/navbar.jpg);
+    background-color: #0d0d0ea9;
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-repeat: no-repeat; /* Prevent background image from repeating */
 }
 
 .navbar-brand {
@@ -17,13 +22,14 @@
     transform: scale(1.1);
 }
 
-.nav-link {
+.navbar-dark .nav-link {
     font-size: 18px;
     margin-left: 20px;
     transition: color 0.3s ease-in-out;
     position: relative;
+    color: #84bbf6;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.699); /* Add a subtle text glow */
 }
-
 .nav-link:before {
     content: "";
     position: absolute;
@@ -39,6 +45,8 @@
 
 .nav-link:hover {
     color: #ffffff;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.9); /* Increase the glow on hover */
+
 }
 
 .nav-link:hover:before {
@@ -48,6 +56,13 @@
 /* Navbar Animation: Mobile Toggle Button */
 .navbar-toggler-icon {
     transition: background-color 0.3s ease-in-out;
+}
+
+
+/* Add this CSS to your stylesheet */
+.logo-img {
+    width:120px; /* Adjust the width to your preferred size */
+    height: auto; /* Maintain aspect ratio */
 }
 
 

@@ -72,3 +72,14 @@
   text-decoration: none; /* Remove underline on hover */
 }
 
+
+
+
+.card-text {
+  font-size: 16px;
+  color: #40b78d;
+}
+
+.card-text.fst-italic {
+  font-style: italic;
+} 
